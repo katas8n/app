@@ -8,8 +8,12 @@ function App() {
             <h1>Huck :</h1>
             <h2>{counter}</h2>
 
-            <button>+</button>
-            <button>-</button>
+            <button onClick={() => setCounter(prevValue => prevValue + 1)}>
+                +
+            </button>
+            <button onClick={() => setCounter(prevValue => prevValue - 1)}>
+                -
+            </button>
         </>
     );
 }
